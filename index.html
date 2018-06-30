@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--BOOTSTRAP and Google fonts-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Arvo|Russo+One:400,600,800" rel="stylesheet">
+<!--Custom Style-->
+  <link rel="stylesheet" href="style.css">
+  <!--favicon-->
+  <link rel="icon" href="images/icon.png">
+
+  <title>OMDB Movie Finder</title>
+</head>
+
+<body>
+
+  <div class="se-pre-con"></div>
+
+  <!--Start of Search page-->
+    <div class="container-fluid ">
+        
+        <div class="d-block p-2  filming"><center>Movie Finder</center></div>
+        
+        <div style="display:flex;flex-direction:column;margin-bottom:3vh;">
+            <img src="images/poster.jpg" class="mx-auto d-block image" style='width:80%;' border="0" >
+                
+            <form class="form-inline my-2 my-lg-0"  id="submitform">
+              <input class="form-control mr-sm-2"  id="searchtitle" type="search" placeholder="Title" aria-label="Search">
+              <input class="form-control mr-sm-2"  id="searchyear" type="search" placeholder="Year" aria-label="Search">
+              <input class="form-control mr-sm-2"  id="searchid" type="search" placeholder="Id" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" id="submitbtn" type="submit">Search</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button class="btn btn-outline-success my-2 my-sm-0" id="resetbtn" type="reset" onClick="window.location.reload()">Reset</button>
+            </form>
+        </div><!--End of Search Page-->
+
+        <div id="error"> 
+          
+        </div>
+
+        <!--Start of Result Page-->
+          <div class="card bg-light mb-3 border-dark movieBody" id="displaymovie">
+            <img class="card-img-top mx-auto d-block poster"  border="0" id="mPoster" src="" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" id="mTitle"></h5>
+              <p class="card-text" id="mReleased"></p></br>
+              <p class="card-text" id="mYear"></p></br>
+              <p class="card-text" id="mActors"></p></br>
+              <p class="card-text" id="mDirector"></p></br>
+              <p class="card-text" id="mWriter"></p></br>
+              <p class="card-text" id="mGenre"></p></br>
+              <p class="card-text" id="mRated"></p></br>
+              <p class="card-text" id="mProduction"></p></br>
+              <p class="card-text" id="mRuntime"></p></br>
+              <p class="card-text" id="mLanguage"></p></br>
+              <p class="card-text" id="mCountry"></p></br>
+              <p class="card-text" id="mAwards"></p></br>
+              <p class="card-text" id="mPlot"></p></br>
+              <p class="card-text" id="mimdbRating"></p></br>
+              <p class="card-text" id="mimdbVotes"></p></br>
+              <p class="card-text" id="mimdbID"></p></br>
+              <p class="card-text" id="mType"></p></br>
+              <p class="card-text" id="mDVD"></p></br>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted" id="mWebsite"></small></br>
+              <small class="text-muted" id="mRatings"></small></br>
+              <small class="text-muted" id="mBoxOffice"></small></br>
+              <small class="text-muted" id="mResponse"></small></br>
+              <small class="text-muted" id="mMetascore"></small></br>
+            </div>
+          </div>
+        
+        
+    </div>
+
+<!--CDN JQuery and Script Tags-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+
+<!--Custom JS/JQuery code-->
+<script src="script.js"></script>
+
+</body>
+
+
+</html>
