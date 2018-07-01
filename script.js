@@ -115,7 +115,7 @@ function bytitle(title) {
       $.ajax({
             type: 'GET', // request type GET
             dataType: 'json', // requesting datatype
-            url: 'http://www.omdbapi.com/?i=tt3896198&apikey=8e176998'+'&t='+title, 
+            url: 'https://www.omdbapi.com/?i=tt3896198&apikey=8e176998'+'&t='+title, 
             success: (data) => { 
             
                    console.log(data); 
@@ -230,7 +230,7 @@ function byyear(title,year) {
       $.ajax({
             type: 'GET', // request type GET
             dataType: 'json', // requesting datatype
-            url: 'http://www.omdbapi.com/?&t='+title+`&y=`+year+`&apikey=8e176998`,
+            url: 'https://www.omdbapi.com/?&t='+title+`&y=`+year+`&apikey=8e176998`,
           
             success: (data) => { 
                 
@@ -348,7 +348,7 @@ function byid(id) {
             type: 'GET', // request type GET
             dataType: 'json', // requesting datatype
             async: true,
-            url: 'http://www.omdbapi.com/?&apikey=8e176998'+'&i='+id, 
+            url: 'https://www.omdbapi.com/?&apikey=8e176998'+'&i='+id, 
             success: (data) => { 
                 
                     
@@ -451,7 +451,7 @@ function byall(title,year,id) {
             $.ajax({
             type: 'GET', // request type GET
             dataType: 'json', // requesting datatype
-            url: `http://www.omdbapi.com/?&i=`+id+`&t=`+title+`&y=`+year+`&apikey=8e176998`,
+            url: `https://www.omdbapi.com/?&i=`+id+`&t=`+title+`&y=`+year+`&apikey=8e176998`,
             success: (data) => { 
 
 
